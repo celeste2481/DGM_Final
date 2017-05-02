@@ -1,0 +1,88 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class NewBehaviourScript : MonoBehaviour {
+
+	// Use this for initialization
+	void Start () {
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	
+	}
+}
+//#1
+static void Main(string[] args)
+{
+	Console.WriteLine("Hello");
+	Console.WriteLine("Celeste Black");
+	Console.WriteLine(DateTime.Now.ToString("h:mm:ss tt"));
+
+}
+
+//#2
+
+static void GetValues(out int a, out int b)
+{
+	a = 2;
+	b = 2;
+}
+static void Main(string[] args)
+{
+	int a, b;
+	GetValues(out a, out b);
+	Console.WriteLine(a+b);
+	Console.WriteLine(a-b);
+	Console.WriteLine(a*b);
+	Console.WriteLine(a/b);
+
+}
+
+//#3
+
+static void Main()
+{
+
+	int[] arr = {2, 14, 18, 22, 24};
+	int sum = 0;
+
+	foreach (int x in arr) {
+		sum += x;
+	}
+
+	Console.WriteLine(sum);
+}
+
+//#4
+
+static Main(int feet, int inches) 
+{
+
+	Console.WriteLine("{0} feet", inches/12);
+	Console.WriteLine("{1} inches", feet/12);
+
+
+
+} 
+
+//#5
+
+static void Main(string[] args)
+{
+
+	Console.WriteLine("Train A Speed");
+	Int trainA = Convert.ToInt32(Console.ReadLine());
+	Console.WriteLine("Train B Speed");
+	Int trainB = Convert.ToInt32(Console.ReadLine());
+	Console.WriteLine("How many hours");
+	Int hours =  Convert.ToInt32(Console.ReadLine());
+
+	Int distance = trainA*trainB*hours;
+
+	Console.WriteLine("The trains are {0} miles apart", distance);
+
+
+
+}	 
